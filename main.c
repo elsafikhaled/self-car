@@ -8,7 +8,7 @@
 #include "Timer1Compare.h"
 #include "EX_Interrupt.h"
 #include "ultrasonic_Cfg.h"
-
+#define F_CPU 16000000
 
 
 int main(void)
