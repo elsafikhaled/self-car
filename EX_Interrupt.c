@@ -10,7 +10,7 @@
 
 void Ex_interrupt_init(void){//start External Interrupt function below !!
 //setup INT1
-//The falling edge of INT1 generates an interrupt request.
+ //Falling edge request interrupt.	
    MCUCR |=(1<<ISC11);	
  //enable INT1	
    GICR |=(1<<INT1);

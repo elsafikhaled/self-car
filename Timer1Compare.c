@@ -9,16 +9,15 @@
 #include <avr/interrupt.h>
 
 void Timer1Compare_setup(void){//start setup for Channel A
-//Compare Output Mode, non-PWM
- //Normal port operation, OC1A/OC1B disconnected.
+//compare output module,Normal mode and OC1A/OC1B pins disconnected.	
    TCCR1A &=~((1<<COM1A1)|(1<<COM1A0));
  //Not PWM mode so must set bit3  
    TCCR1A |=(1<<FOC1A);
- //Waveform Generation Mode depend on CTC at OCR1A value.
+ //wave form generation depend on CTC at OC1A.  
    TCCR1A &=~((1<<WGM10)|(1<<WGM11)); 	
    TCCR1B |=(1<<WGM12);
    TCCR1B &=~(1<<WGM13);
- //clkI/O/8 (From prescaler)
+ //prescaler 8  
    TCCR1B |=(1<<CS11);
  //reset counter storage register to 0
    TCNT1=0;

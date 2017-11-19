@@ -16,10 +16,10 @@
 
 
 /* ***************************************************************************
- Ultrasonic sensor Pins:
+ Ultrasonic sensor Connection::
  VCC: +5VDC
  Trig : Trigger (OUTPUT) 10 uSec - PD2
- Echo: Echo (INPUT) to INT1     - PD3
+ Echo: Echo (INPUT) to INT1      - PD3
  GND: GND
  * *************************************************************************/
 void GPIO_Setup(void);

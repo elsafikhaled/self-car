@@ -7,7 +7,6 @@
 #ifndef EX_INTERRUPT_H_
 #define EX_INTERRUPT_H_
 
-
 void Ex_interrupt_init(void);
 /* **************************************************************************
 Function Description: Setup external interrupt actually INT1.
