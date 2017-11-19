@@ -88,7 +88,7 @@ ISR(INT1_vect){//start service routine of INT1 (priority=3)
 	distance_object=(U8_t)(((time_ultrasonic*2)/12)*100);
 
 	#if(DEBUG==1)
-		TbUart_Send_char(distance_object);
+		TB_intNumASCII(distance_object);
 	#endif //debug_send distance to terminal GUI.
 	
 	//empty counter register.
